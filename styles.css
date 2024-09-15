@@ -1,0 +1,460 @@
+:root {
+  --text-color: #667085;
+  --main-color: #8E2424;
+  --fonte: "Inter", sans-serif;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.cabecalho__titulo {
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.logo {
+  margin-right: 9px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+button#signUp {
+  background-color: #8e2424;
+  color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8em;
+    gap: 18px;
+}
+
+.mini_titulo-empresa {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.titulo_principal {
+    font-size: 45px;
+}
+
+.descricao {
+    display: flex;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.metricas-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0 12.5em;
+}
+
+.secoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.num_titulo {
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.sub_titulo {
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.texto_explicao {
+    color: var(--text-color);
+    
+}
+
+.imagem-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.button_vagas {
+  background-color: #fac5c52f;
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.img_work {
+  width: 85%;
+  margin: 2.5em 0 3em;
+}
+
+.vagas-container {
+  margin: 2em 0 4em;
+}
+
+.vagas-secao {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.secao-titulo {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 1.5em;
+  margin-left: 20%;
+}
+
+.vagas {
+  display: flex;
+  flex-direction: column;
+  gap: 1em; 
+}
+
+.vaga {
+  display: flex;
+  justify-content: center; 
+}
+
+.card-vaga {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #a7abb354;
+  background-color: transparent;
+  width: 60%; 
+  padding: 1.5em;
+  cursor: context-menu;
+}
+
+.titulo-vaga {
+  font-size: 18px;
+  color: black;
+}
+
+.informacoes {
+  display: flex;
+  font-size: 16px;
+  padding-top: 2em;
+}
+
+.faixa-salarial {
+  font-weight: bold;
+  padding: 0 1.5em;
+}
+
+.depoimentos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-depoimentos {
+  padding: 5em;
+  text-align: center;
+}
+
+.sub-titulo_dep {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px; 
+}
+
+.titulo_dep {
+  color: black;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 32px; 
+}
+
+.icon_dep {
+  display: block; 
+  margin: 0 auto; 
+  margin-bottom: 0.8em;
+}
+
+.nome-dev {
+  color: black;
+  font-size: 16px;
+}
+
+.desc-dev {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7em;
+  gap: 15px;
+}
+
+.titulo_rodape {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.texto_rodape {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.formulario_rodape {
+  display: flex;
+  gap: 10px;
+  padding: 2em 0 0.6em;
+}
+
+.email_rodape {
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  padding: 0 5em 0 1em;
+  width: 100%;
+}
+
+.button_email {
+  padding: 1em; 
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+  background-color: var(--main-color);
+  color: white; 
+  cursor: pointer; 
+}
+
+.email_rodape::placeholder {
+  font-size: 16px;
+}
+
+.direitos_rodape {
+  font-size: 16px;
+  color: var(--text-color);
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 728px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .cabecalho__titulo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .logo {
+    margin-right: 10px;
+  }
+  
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.7rem;
+    width: 100%;
+    position: absolute;
+    top: 60px; 
+    right: 1rem;
+    background-color: #fff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .links a {
+    padding: 1em 0 1em 1em;
+  }
+  
+  .menu-button {
+    background-image: url(img/menu.svg);
+    background-repeat: no-repeat;
+    padding: 1em;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .links.active {
+    display: flex;
+    width: 50%;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  header {
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .titulo_principal {
+    font-size: 36px;
+  }
+
+  .descricao {
+    font-size: 16px;
+  }
+
+  .metricas-container {
+    display: grid;
+    gap: 2em;
+    margin: 2em 0;
+  }
+
+  .num_titulo {
+    font-size: 48px;
+  }
+
+  .sub_titulo {
+    font-size: 16px;
+  }
+
+  .imagem-container {
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .button_vagas {
+    font-size: 16px;
+  }
+
+  .img_work {
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  .vagas-container {
+    margin: 0 2em;
+  }
+
+  .vagas-secao {
+    margin-bottom: 3em;
+  }
+
+  .secao-titulo {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .vaga {
+    justify-content: flex-start;
+  }
+
+  .card-vaga {
+    width: 90%;
+  }
+
+  .titulo-vaga {
+    font-size: 16px;
+  }
+
+  .informacoes {
+    font-size: 14px;
+  }
+
+  .depoimentos-container {
+    padding: 1em 1em;
+  }
+
+  .card-depoimentos {
+    padding: 0.8em;
+  }
+
+  .titulo_dep {
+    font-size: 28px;
+  }
+
+  footer {
+    padding-top: 2em;
+  }
+
+  .titulo_rodape {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .texto_rodape {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  .formulario_rodape {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .email_rodape {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .button_email {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .direitos_rodape {
+    font-size: 14px;
+    text-align: center;
+  }
+}
